@@ -1,0 +1,21 @@
+{
+    "name": "doubler/pigu-open-api",
+    "description": "PiGu Open API SDK",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Doubler\\PiGu\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "zsc",
+            "email": "985342160@qq.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "doubler/open-api-sdk": "^1.0.4"
+    }
+}
