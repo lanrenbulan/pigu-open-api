@@ -15,12 +15,18 @@ class Context
         $this->config = $config;
     }
 
+    public function getUsername(): string
+    {
+        return $this->config['token'];
+    }
+
+    public function getPassword(): string
+    {
+        return $this->config['password'];
+    }
+
     public function getToken(): string
     {
-        if (!isset($this->config['token'])) {
-            throw new InvalidArgumentException('Token is required.');
-        }
-
         return $this->config['token'];
     }
 
