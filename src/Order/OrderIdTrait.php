@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Doubler\PiguOpenApi\Order;
 
-class OrderIdTrait
+trait OrderIdTrait
 {
     private int $orderId;
     
