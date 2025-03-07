@@ -6,7 +6,7 @@ namespace Doubler\PiguOpenApi;
 
 use Doubler\OpenApiSdk\RequestBuilderTrait;
 
-class AbstractRequestBuilder
+abstract class AbstractRequestBuilder
 {
     use RequestBuilderTrait;
 
