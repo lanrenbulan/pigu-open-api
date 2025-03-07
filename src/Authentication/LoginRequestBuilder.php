@@ -12,6 +12,7 @@ class LoginRequestBuilder extends AbstractRequestBuilder
 
     protected function beforeBuildRequest(): void
     {
+        $this->headers['Content-Type'] = 'application/json';
         $this->bodyParams['username'] = $this->context->getUsername();
         $this->bodyParams['password'] = $this->context->getPassword();
     }

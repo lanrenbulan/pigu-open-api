@@ -24,6 +24,7 @@ abstract class AbstractRequestBuilder
 
     protected function beforeBuildRequest(): void
     {
+        $this->headers['Content-Type'] = 'application/json';
         $this->headers['Authorization'] = 'Pigu-mp ' . $this->context->getToken();
     }
 }
