@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\OrderProduct;
+namespace Doubler\PiguOpenApi\OrderProduct;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 /**
  * Insert data of available product amount

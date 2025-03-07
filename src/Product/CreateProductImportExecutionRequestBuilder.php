@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Product;
+namespace Doubler\PiguOpenApi\Product;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
-use Doubler\PiGuOpenApi\SellerIdTrait;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\SellerIdTrait;
 
 class CreateProductImportExecutionRequestBuilder extends AbstractRequestBuilder
 {

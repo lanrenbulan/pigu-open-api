@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Offer;
+namespace Doubler\PiguOpenApi\Offer;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetOffersRequestBuilder extends AbstractRequestBuilder
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Order;
+namespace Doubler\PiguOpenApi\Order;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetOrderProductsRequestBuilder extends AbstractRequestBuilder
 {

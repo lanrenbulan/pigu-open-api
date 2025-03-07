@@ -2,38 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Authorization;
+namespace Doubler\PiguOpenApi\Authorization;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class LoginRequestBuilder extends AbstractRequestBuilder
 {
     protected string $method = 'POST';
 
-    /**
-     * Set username
-     * 
-     * @param string $username
-     * @return $this
-     */
-    public function setUsername(string $username): self
+    protected function beforeBuildRequest(): void
     {
-        $this->bodyParams['username'] = $username;
-
-        return $this;
-    }
-
-    /**
-     * Set password
-     * 
-     * @param string $password
-     * @return $this
-     */
-    public function setPassword(string $password): self
-    {
-        $this->bodyParams['password'] = $password;
-
-        return $this;
+        $this->bodyParams['username'] = $this->context->getUsername();
+        $this->bodyParams['password'] = $this->context->getPassword();
     }
 
     protected function getApiPath(): string

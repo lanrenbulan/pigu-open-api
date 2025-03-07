@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi;
+namespace Doubler\PiguOpenApi;
 
 use Doubler\OpenApiSdk\RequestBuilderTrait;
 
@@ -24,6 +24,6 @@ class AbstractRequestBuilder
 
     protected function beforeBuildRequest(): void
     {
-        $this->headers['Authorization'] = $this->context->getApiKey();
+        $this->headers['Authorization'] = 'Pigu-mp ' . $this->context->getToken();
     }
 }

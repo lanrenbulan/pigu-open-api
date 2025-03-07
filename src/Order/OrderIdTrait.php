@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Order;
+namespace Doubler\PiguOpenApi\Order;
 
 class OrderIdTrait
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi;
+namespace Doubler\PiguOpenApi;
 
 class SellerIdTrait
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Seller;
+namespace Doubler\PiguOpenApi\Seller;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetAuthenticatedSellerDetailsRequestBuilder extends AbstractRequestBuilder
 {

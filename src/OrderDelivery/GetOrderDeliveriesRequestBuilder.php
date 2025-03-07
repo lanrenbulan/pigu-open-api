@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\OrderDelivery;
+namespace Doubler\PiguOpenApi\OrderDelivery;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
-use Doubler\PiGuOpenApi\Order\OrderIdTrait;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\Order\OrderIdTrait;
 
 class GetOrderDeliveriesRequestBuilder extends AbstractRequestBuilder
 {

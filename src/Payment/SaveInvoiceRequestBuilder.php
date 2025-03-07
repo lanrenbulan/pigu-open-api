@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Payment;
+namespace Doubler\PiguOpenApi\Payment;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class SaveInvoiceRequestBuilder extends AbstractRequestBuilder
 {

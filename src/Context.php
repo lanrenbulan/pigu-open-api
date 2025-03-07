@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi;
+namespace Doubler\PiguOpenApi;
 
 use InvalidArgumentException;
 
@@ -15,22 +15,13 @@ class Context
         $this->config = $config;
     }
 
-    public function getUsername(): string
+    public function getToken(): string
     {
-        if (!isset($this->config['username'])) {
-            throw new InvalidArgumentException('Username is required.');
+        if (!isset($this->config['token'])) {
+            throw new InvalidArgumentException('Token is required.');
         }
 
-        return $this->config['username'];
-    }
-
-    public function getPassword(): string
-    {
-        if (!isset($this->config['password'])) {
-            throw new InvalidArgumentException('Password is required.');
-        }
-
-        return $this->config['password'];
+        return $this->config['token'];
     }
 
     public function getGatewayUri(): string

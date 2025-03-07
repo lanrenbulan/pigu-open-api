@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\Category;
+namespace Doubler\PiguOpenApi\Category;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetCategoriesRequestBuilder extends AbstractRequestBuilder
 {

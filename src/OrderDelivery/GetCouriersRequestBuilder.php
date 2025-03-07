@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiGuOpenApi\OrderDelivery;
+namespace Doubler\PiguOpenApi\OrderDelivery;
 
-use Doubler\PiGuOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetCouriersRequestBuilder extends AbstractRequestBuilder
 {
