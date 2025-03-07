@@ -17,7 +17,7 @@ class Context
 
     public function getUsername(): string
     {
-        return $this->config['token'];
+        return $this->config['username'];
     }
 
     public function getPassword(): string
