@@ -6,7 +6,7 @@ namespace Doubler\PiguOpenApi\OrderDelivery;
 
 use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
-class CreateOrderDeliveryRequestBuilder extends AbstractRequestBuilder
+class CompleteOrderDeliveryRequestBuilder extends AbstractRequestBuilder
 {
     private int $orderDeliveryId;
  

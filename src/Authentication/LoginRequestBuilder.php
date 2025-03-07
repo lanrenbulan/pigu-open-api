@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiguOpenApi\Authorization;
+namespace Doubler\PiguOpenApi\Authentication;
 
 use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
