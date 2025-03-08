@@ -25,6 +25,11 @@ class Context
         return $this->config['password'];
     }
 
+    public function getSellerId(): string
+    {
+        return $this->config['seller_id'];
+    }
+
     public function getToken(): string
     {
         return $this->config['token'];

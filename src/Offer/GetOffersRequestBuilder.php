@@ -11,6 +11,13 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
 {
     use SellerIdTrait;
 
+    public function __construct(Context $context)
+    {
+        $this->context = $context;
+
+        $this->setSellerId($context->getSellerId());
+    }
+
     public function setAfter(int $offset): self
     {
         $this->queryParams['after'] = $offset;
