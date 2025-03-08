@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Doubler\PiguOpenApi\Order;
 
 use Doubler\PiguOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\SellerIdTrait;
 
 class GetOrdersRequestBuilder extends AbstractRequestBuilder
 {
