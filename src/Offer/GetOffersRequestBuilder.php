@@ -5,19 +5,9 @@ declare(strict_types=1);
 namespace Doubler\PiguOpenApi\Offer;
 
 use Doubler\PiguOpenApi\AbstractRequestBuilder;
-use Doubler\PiguOpenApi\SellerIdTrait;
 
 class GetOffersRequestBuilder extends AbstractRequestBuilder
 {
-    use SellerIdTrait;
-
-    public function __construct(Context $context)
-    {
-        $this->context = $context;
-
-        $this->setSellerId($context->getSellerId());
-    }
-
     public function setAfter(int $offset): self
     {
         $this->queryParams['after'] = $offset;
@@ -105,6 +95,6 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
     
     protected function getApiPath(): string
     {
-        return sprintf('/v3/sellers/%s/offers', $this->sellerId);
+        return sprintf('/v3/sellers/%s/offers', $this->context->getSellerId());
     }
 }
