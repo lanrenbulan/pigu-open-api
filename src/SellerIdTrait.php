@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Doubler\PiguOpenApi;
 
-class SellerIdTrait
+trait SellerIdTrait
 {
     private int $sellerId;
     
