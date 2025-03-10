@@ -10,6 +10,13 @@ class CreateOrderDeliveryRequestBuilder extends AbstractRequestBuilder
 {
     protected string $method = 'POST';
 
+    public function setOrderId(int $orderId): self
+    {
+        $this->bodyParams['order_id'] = $orderId;
+
+        return $this;
+    }
+
     public function setCourierId(int $courierId): self
     {
         $this->bodyParams['courier_id'] = $courierId;
