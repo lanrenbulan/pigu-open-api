@@ -33,6 +33,6 @@ class InsertOrderProductAmountRequestBuilder extends AbstractRequestBuilder
 
     protected function getApiPath(): string
     {
-        return sprintf('​/v3​/order-products​/%d​/amounts', $this->orderProductId);
+        return sprintf('/v3/order-products/%d/amounts', $this->orderProductId);
     }
 }
