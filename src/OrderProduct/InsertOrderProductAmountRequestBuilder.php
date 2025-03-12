@@ -15,7 +15,7 @@ class InsertOrderProductAmountRequestBuilder extends AbstractRequestBuilder
 {
     private int $orderProductId;
 
-    protected string $method = 'POST';
+    protected string $method = 'PUT';
 
     public function setOrderProductId(int $orderProductId): self
     {
