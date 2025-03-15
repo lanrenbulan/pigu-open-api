@@ -8,9 +8,9 @@ use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetOffersRequestBuilder extends AbstractRequestBuilder
 {
-    public function setAfter(int $offset): self
+    public function setAfter(int $after): self
     {
-        $this->queryParams['after'] = $offset;
+        $this->queryParams['after'] = $after;
 
         return $this;
     }
