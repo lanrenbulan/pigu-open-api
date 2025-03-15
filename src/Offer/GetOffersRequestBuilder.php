@@ -79,6 +79,13 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
+        public function setUpdatedAtTo(string $updatedAtTo): self
+    {
+        $this->queryParams['updated_at_to'] = $updatedAtTo;
+        
+        return $this;
+    }
+
     public function setHasInvalidPrice(bool $hasInvalidPrice): self
     {
         $this->queryParams['has_invalid_price'] = $hasInvalidPrice ? 'true' : 'false';
