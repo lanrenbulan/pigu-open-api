@@ -8,7 +8,7 @@ trait OfferIdTrait
 {
     private int $offerId;
     
-    public function setOrderId(int $offerId)
+    public function setOfferId(int $offerId)
     {
         $this->offerId = $offerId;
     }
