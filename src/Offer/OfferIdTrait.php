@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Doubler\PiguOpenApi\Order;
+namespace Doubler\PiguOpenApi\Offer;
 
 trait OfferIdTrait
 {
