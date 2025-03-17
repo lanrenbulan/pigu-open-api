@@ -43,7 +43,6 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    
     public function setPriceFrom(int $priceFrom): self
     {
         $this->queryParams['price_from'] = $priceFrom;
@@ -55,6 +54,13 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
     {
         $this->queryParams['price_to'] = $priceTo;
         
+        return $this;
+    }
+
+    public function setAfter(array $piguExternalIds): self
+    {
+        $this->queryParams['pigu_external_ids'] = $piguExternalIds;
+
         return $this;
     }
 
