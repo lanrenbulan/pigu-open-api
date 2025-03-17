@@ -57,7 +57,7 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setAfter(array $piguExternalIds): self
+    public function setPiguExternalIds(array $piguExternalIds): self
     {
         $this->queryParams['pigu_external_ids'] = $piguExternalIds;
 
