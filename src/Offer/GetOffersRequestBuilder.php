@@ -57,6 +57,13 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
+    public function setExternalModIds(array $externalModIds): self
+    {
+        $this->queryParams['external_mod_ids'] = $externalModIds;
+
+        return $this;
+    }
+    
     public function setPiguExternalIds(array $piguExternalIds): self
     {
         $this->queryParams['pigu_external_ids'] = $piguExternalIds;
