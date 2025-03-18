@@ -5,10 +5,18 @@ declare(strict_types=1);
 namespace Doubler\PiguOpenApi\Offer;
 
 use Doubler\PiguOpenApi\AbstractRequestBuilder;
+use Doubler\PiguOpenApi\Context;
 
 class CreateOfferRequestBuilder extends AbstractRequestBuilder
 {
     protected string $method = 'POST';
+
+    public function __construct(Context $context)
+    {
+        $this->context = $context;
+
+        $this->setSellerId($context->getSellerId());
+    }
   
     public function setSellerId(int $sellerId): self
     {
