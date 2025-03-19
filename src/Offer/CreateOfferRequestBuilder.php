@@ -25,7 +25,7 @@ class CreateOfferRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setAppName(int $appName): self
+    public function setAppName(string $appName): self
     {
         $this->bodyParams['app_name'] = $appName;
         
@@ -39,7 +39,7 @@ class CreateOfferRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setEan(int $ean): self
+    public function setEan(string $ean): self
     {
         $this->bodyParams['ean'] = $ean;
         
