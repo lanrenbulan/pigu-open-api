@@ -83,6 +83,6 @@ class CreateOfferRequestBuilder extends AbstractRequestBuilder
     
     protected function getApiPath(): string
     {
-        return sprintf('/v3/sellers/%s/offers', $this->context->getSellerId());
+        return sprintf('/v3/offers');
     }
 }
