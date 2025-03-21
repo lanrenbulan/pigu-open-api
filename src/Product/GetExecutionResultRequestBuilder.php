@@ -17,6 +17,6 @@ class GetExecutionResultRequestBuilder extends AbstractRequestBuilder
   
     protected function getApiPath(): string
     {
-        return sprintf('/v3/sellers/{sellerId}/product/import/execution/%s/results', $this->executionId);
+        return sprintf('/v3/sellers/%d/product/import/execution/%s/results', $this->context->getSellerId(), $this->executionId);
     }
 }
