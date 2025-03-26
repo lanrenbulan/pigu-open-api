@@ -11,7 +11,7 @@ class UpdateOfferRequestBuilder extends AbstractRequestBuilder
 {
     use OfferIdTrait;
   
-    protected string $method = 'PATH';
+    protected string $method = 'PATCH';
 
     public function setDeliveryHours(int $deliveryHours): self
     {
