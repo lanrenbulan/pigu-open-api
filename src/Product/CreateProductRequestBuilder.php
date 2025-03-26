@@ -19,9 +19,9 @@ class CreateProductRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setSellerId(int $sellerId): self
+    public function setCategoryId(int $categoryId): self
     {
-        $this->bodyParams['category_id'] = $sellerId;
+        $this->bodyParams['category_id'] = $categoryId;
 
         return $this;
     }
@@ -61,14 +61,14 @@ class CreateProductRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setSellerId(string $longDescription): self
+    public function setLongDescription(string $longDescription): self
     {
         $this->bodyParams['long_description'] = $longDescription;
 
         return $this;
     }
 
-    public function setSellerId(string longDescriptionLv): self
+    public function setLongDescriptionLv(string longDescriptionLv): self
     {
         $this->bodyParams['long_description_lv'] = longDescriptionLv;
 
