@@ -68,21 +68,21 @@ class CreateProductRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    public function setLongDescriptionLv(string longDescriptionLv): self
+    public function setLongDescriptionLv(string $longDescriptionLv): self
     {
         $this->bodyParams['long_description_lv'] = longDescriptionLv;
 
         return $this;
     }
 
-    public function setLongDescriptionEe(int longDescriptionEe): self
+    public function setLongDescriptionEe(string $longDescriptionEe): self
     {
         $this->bodyParams['long_description_ee'] = longDescriptionEe;
 
         return $this;
     }
 
-    public function setLongDescriptionFi(int longDescriptionFi): self
+    public function setLongDescriptionFi(string $longDescriptionFi): self
     {
         $this->bodyParams['long_description_fi'] = longDescriptionFi;
 
