@@ -8,9 +8,9 @@ use Doubler\PiguOpenApi\AbstractRequestBuilder;
 
 class GetOffersRequestBuilder extends AbstractRequestBuilder
 {
-    public function setAfter(int $offset): self
+    public function setAfter(int $after): self
     {
-        $this->queryParams['after'] = $offset;
+        $this->queryParams['after'] = $after;
 
         return $this;
     }
@@ -43,7 +43,6 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
         return $this;
     }
 
-    
     public function setPriceFrom(int $priceFrom): self
     {
         $this->queryParams['price_from'] = $priceFrom;
@@ -55,6 +54,20 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
     {
         $this->queryParams['price_to'] = $priceTo;
         
+        return $this;
+    }
+
+    public function setExternalModIds(array $externalModIds): self
+    {
+        $this->queryParams['external_mod_ids'] = $externalModIds;
+
+        return $this;
+    }
+    
+    public function setPiguExternalIds(array $piguExternalIds): self
+    {
+        $this->queryParams['pigu_external_ids'] = $piguExternalIds;
+
         return $this;
     }
 
@@ -75,6 +88,13 @@ class GetOffersRequestBuilder extends AbstractRequestBuilder
     public function setUpdatedAtFrom(string $updatedAtFrom): self
     {
         $this->queryParams['updated_at_from'] = $updatedAtFrom;
+        
+        return $this;
+    }
+
+        public function setUpdatedAtTo(string $updatedAtTo): self
+    {
+        $this->queryParams['updated_at_to'] = $updatedAtTo;
         
         return $this;
     }

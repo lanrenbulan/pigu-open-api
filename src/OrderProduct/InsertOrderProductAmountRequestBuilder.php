@@ -15,20 +15,24 @@ class InsertOrderProductAmountRequestBuilder extends AbstractRequestBuilder
 {
     private int $orderProductId;
 
-    protected string $method = 'POST';
+    protected string $method = 'PUT';
 
     public function setOrderProductId(int $orderProductId): self
     {
         $this->orderProductId = $orderProductId;
+
+        return $this;
     }
 
     public function setAmountNow(int $amountNow): self
     {
         $this->bodyParams['amount_now'] = $amountNow;
+
+        return $this;
     }
 
     protected function getApiPath(): string
     {
-        return sprintf('​/v3​/order-products​/%d​/amounts', $this->orderProductId);
+        return sprintf('/v3/order-products/%d/amounts', $this->orderProductId);
     }
 }
